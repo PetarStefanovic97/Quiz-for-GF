@@ -1,0 +1,48 @@
+<!-- code by webdevtrick (https://webdevtrick.com) -->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kviz</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel = "icon" type = "image/png" href = "./pic/srce2.png">
+</head>
+<body>
+        
+    <div class="sve">
+        <div id="forma" class="form-style-5">
+                <legend><img id="got" src="./pic/got.png" alt="" width="100%"></legend>
+                <div style="font-size:20px;margin:5px 0 5px 5px;">Lozinka:</div>
+                <input type="password" id="sifra" name="password" placeholder="Winter is Coming">
+                <button type="submit" id="dugme" onclick="Submit()">Potvrdi</button>
+                <div id="msg"></div>  
+        </div>
+
+    
+    <div id="grid">
+        <div id="quiz">
+         
+           
+ 
+            <p id="question"></p>
+ 
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+ 
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+</div>
+ 
+<script src="./js/question.js"></script>
+ 
+</body>
+</html>

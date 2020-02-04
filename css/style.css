@@ -1,0 +1,186 @@
+body {
+	background-color: #413D3D;
+	background: url("../pic/srce.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+ 
+#grid {
+    width: 600px;
+    height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: transparent;
+    padding: 10px 0 50px 0;
+    text-align: center;
+    
+}
+ 
+#grid h1 {
+    font-family: "sans-serif";
+    background-color: darkred;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    
+}
+
+#hp img {
+	width: 100%;
+}
+
+#score {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+ 
+#grid #question {
+    font-family: "monospace";
+    font-size: 30px;
+	color: black;
+	font-weight: 600;
+}
+ 
+.buttons {
+    margin-top: 30px;
+}
+ 
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: darkred;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid darkred;
+    margin: 10px 10px 10px 0px;
+	padding: 10px 10px;
+	border-radius: 15px;
+}
+ 
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+ 
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+ 
+#progress {
+    color: #2b2b2b;
+    font-size: 18px;
+}
+/*forma*/
+#forma {
+	background: transparent;
+}
+.form-style-5{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+	border: none;
+}
+.form-style-5 legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-style-5 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="password"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="password"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+	background: #d2d9dd;
+}
+.form-style-5 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-style-5 .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+#dugme,
+.form-style-5 input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: darkred;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid darkred;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+	background: #109177;
+}
+
+@media only screen and (max-width: 768px) {
+	
+    #grid {
+      width: 100%;
+      height: auto;
+    }
+  }
