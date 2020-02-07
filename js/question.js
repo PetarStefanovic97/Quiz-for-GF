@@ -12,7 +12,7 @@ function Submit() {
         document.getElementById("forma").style.display = "none";
     }
     else {
-        document.getElementById("msg").innerHTML = "Šifra je vezana za jednu kuću u GoT-u :)";
+        document.getElementById("msg").innerHTML = "Password is related for one house from Game of Thrones";
     }
 }
 
@@ -84,27 +84,27 @@ function guess(id, guess) {
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
-    element.innerHTML = "Pitanje " + currentQuestionNumber + " od " + quiz.questions.length;
+    element.innerHTML = "Question " + currentQuestionNumber + " from " + quiz.questions.length;
 };
 
 
 
 function showScores() {
-    var gameOverHTML = "<h1>Rezultat</h1>";
+    var gameOverHTML = "<h1>Score</h1>";
     if(quiz.score <= 1) {
-        gameOverHTML += "<h2 id='score'> Nisi ti za ovu vezu </h2>";
+        gameOverHTML += "<h2 id='score'> You are not for this relatioship </h2>";
     }
     else if (quiz.score <= 2) {
-        gameOverHTML += "<h2 id='score'> Moramo ozbiljno da razgovaramo </h2>";
+        gameOverHTML += "<h2 id='score'> We have to talk seriously </h2>";
     }
     else if (quiz.score <= 3) {
-        gameOverHTML += "<h2 id='score'> Nisi loša </h2>";
+        gameOverHTML += "<h2 id='score'> Not bad not bad </h2>";
     }
     else if (quiz.score <= 4) {
-        gameOverHTML += "<h2 id='score'> Dobro je </h2>";
+        gameOverHTML += "<h2 id='score'> It's ok </h2>";
     }
     else {
-        gameOverHTML =  "<div id='hp'><h1 style='margin:0; padding:0;'>Srećan rođendan	&#x2665;</h1><img src='./pic/vatromet.gif'> </div>"
+        gameOverHTML =  "<div id='hp'><h1 style='margin:0; padding:0;'>Happy birthday	&#x2665;</h1><img src='./pic/vatromet.gif'> </div>"
     }
     //gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
@@ -113,11 +113,11 @@ function showScores() {
  
 // create questions here
 var questions = [
-    new Question("Gde smo se upoznali?", ["Fakultet", "Biblioteka","Kafana", "Park"], "Kafana"),
-    new Question("Kad smo počeli da se dopisujemo?", ["3. Decembar", "5. Decembar", "4. Decembar", "6. Decembar"], "4. Decembar"),
-    new Question("Koliko dugo smo se dopisivali pre nego što smo se videli?", ["7 Dana", "10 Dana","14 Dana", "18 Dana"], "14 Dana"),
-    new Question("Kad mi je rođendan?", ["15. Decembar", "18. Avgust", "13. Septembar", "11. Oktobar"], "18. Avgust"),
-    new Question("Omiljena serija?", ["Game of Thrones", "Bela Lađa", "Srećni ljudi", "Bolji život"], "Game of Thrones")
+    new Question("Where are we met?", ["Faculty", "Library","Pub", "Park"], "Pub"),
+    new Question("When we started to text each other?", ["3. December", "5. December", "4. December", "6. December"], "4. December"),
+    new Question("After how many days we saw each other?", ["7 Days", "10 Days","14 Days", "18 Days"], "14 Days"),
+    new Question("When my birthday is?", ["15. December", "18. August", "13. September", "11. October"], "18. August"),
+    new Question("What is my favorite show?", ["Game of Thrones", "Bela Lađa", "Srećni ljudi", "Bolji život"], "Game of Thrones")
 ];
  
 // create quiz
